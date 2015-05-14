@@ -19,6 +19,14 @@ function calcAdd()
     return finalNum;
 }
 
+function calcSub()
+{
+    num1 = parseFloat(prompt("Enter the first number: "));
+    num2 = parseFloat(prompt("Enter the second number: "));
+    finalNum = (num1 - num2);
+    return finalNum;
+}
+
 // main
 calcSymbol = parseFloat(prompt("Would you like to add, subtract, multiply, or divide?"
     + "\nEnter 1 for \"Addition\""
@@ -30,4 +38,9 @@ if(calcSymbol == 1)
 {
     calcAdd();
     console.log(num1 + " + " + num2 + " = " + finalNum);
+}
+else if (calcSymbol == 2)
+{
+    calcSub();
+    console.log(num1 + " - " + num2 + " = " + finalNum);
 }
