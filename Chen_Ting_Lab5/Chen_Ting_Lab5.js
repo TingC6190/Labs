@@ -35,6 +35,18 @@ function calcMult()
     return finalNum;
 }
 
+function calcDiv()
+{
+    num1 = parseFloat(prompt("Enter the first number: "));
+    num2 = parseFloat(prompt("Enter the second number: "));
+    while ( num2 === 0)
+    {
+        num2 = parseFloat(prompt("Enter a different second number: "));
+    }
+    finalNum = (num1 / num2);
+    return finalNum;
+}
+
 // main
 calcSymbol = parseFloat(prompt("Would you like to add, subtract, multiply, or divide?"
     + "\nEnter 1 for \"Addition\""
@@ -56,4 +68,9 @@ else if (calcSymbol == 3)
 {
     calcMult();
     console.log(num1 + " * " + num2 + " = " + finalNum);
+}
+else if (calcSymbol == 4)
+{
+    calcDiv();
+    console.log(num1 + " / " + num2 + " = " + finalNum);
 }
