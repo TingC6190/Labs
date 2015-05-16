@@ -18,6 +18,14 @@ function finalName()
     {
         console.log("Team #" + (i+1) + ": " + teamState[i] + " " + teamName[i]);
     }
+
+    teamState.push("Cleveland");
+    teamName.push("Cavaliers")
+
+    for (var i = 0; i < teamState.length; i++)
+    {
+        console.log("Team #" + (i+1) + ": " + teamState[i] + " " + teamName[i]);
+    }
 }
 
 // MAIN CODE
