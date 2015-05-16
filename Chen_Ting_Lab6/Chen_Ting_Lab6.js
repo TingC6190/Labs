@@ -11,12 +11,12 @@
 // FUNCTIONS
 function finalName()
 {
-    var teamState = [];
-    var teamName = [];
+    var teamState = ["Orlando", "Los Angeles", "New York", "Chicago", "Miami"];
+    var teamName = ["Magic", "Lakers", "Knicks", "Bulls", "Heats"];
 
     for (var i = 0; i < teamState.length; i++)
     {
-
+        console.log("Team #" + (i+1) + ": " + teamState[i] + " " + teamName[i]);
     }
 }
 
