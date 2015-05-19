@@ -23,7 +23,14 @@ function sortedArray(argArray)
     // loop through the array according to the length of the array
     for(var j = 0; j < argArray.length; j++)
     {
-       
+        // loop through two numbers, left and right
+        for (var i = 0; i < argArray.length; i++)
+        {
+            // set the left number to be the 1st number
+            leftNum = argArray[i];
+            // set the right number to be the 2nd number
+            rightNum = argArray[(i) + 1];
+        }
     }
     return newArray;
 
