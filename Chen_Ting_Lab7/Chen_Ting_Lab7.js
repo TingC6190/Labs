@@ -13,5 +13,24 @@ var finalArray = [];
 
 //function
 
+function sortedArray(argArray)
+{
+    // local variables
+    var newArray = [];
+    var leftNum;
+    var rightNum;
+
+    // loop through the array according to the length of the array
+    for(var j = 0; j < argArray.length; j++)
+    {
+       
+    }
+    return newArray;
+
+}
 
 //main code
+
+// print out sorted array 1
+console.log("Sorted Array 1: " + finalArray);
+finalArray = sortedArray(arrayOne);
