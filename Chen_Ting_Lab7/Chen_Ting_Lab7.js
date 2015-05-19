@@ -30,8 +30,15 @@ function sortedArray(argArray)
             leftNum = argArray[i];
             // set the right number to be the 2nd number
             rightNum = argArray[(i) + 1];
+
+            // if left number is bigger than right number, then exchange their position
+            if (leftNum > rightNum) {
+                argArray[i] = rightNum;
+                argArray[(i) + 1] = leftNum;
+            }
         }
     }
+    console.log(argArray);
     return newArray;
 
 }
@@ -41,3 +48,10 @@ function sortedArray(argArray)
 // print out sorted array 1
 console.log("Sorted Array 1: " + finalArray);
 finalArray = sortedArray(arrayOne);
+
+// print out sorted array 2
+console.log("\nSorted Array 2: " + finalArray);
+finalArray = sortedArray(arrayTwo);
+
+console.log("\nSorted Array 3: " + finalArray);
+finalArray = sortedArray(arrayThree);
