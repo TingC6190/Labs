@@ -41,8 +41,7 @@ console.log("Your email is " + emailString);
 
 
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Problem 2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Problem 2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 // Global Variables
 var finalString;
@@ -58,6 +57,12 @@ function separatorFunction()
     var string3 = prompt("What is your third string?", "ghi");
     var separatorA = prompt("What would you like your separators to be?", ",");
     var separatorB = prompt("What would you like to replace your separators with?", "/");
+
+    currentString = string1 + separatorA + string2 + separatorA + string3;
+    newString = string1 + separatorB + string2 + separatorB + string3;
+
+    console.log("Current: " + currentString);
+    console.log("New: " + newString);
 }
 
 
