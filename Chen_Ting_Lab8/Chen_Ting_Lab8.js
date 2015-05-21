@@ -6,7 +6,9 @@
 // Lab 8
 
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Problem 1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+/*
 // Global Variables
 var emailString = "";
 
@@ -35,3 +37,45 @@ function checkEmail(emailArg)
 // Main code
 checkEmail(emailString);
 console.log("Your email is " + emailString);
+*/
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Problem 2~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+// Global Variables
+var finalString;
+
+// Function
+function separatorFunction()
+{
+
+}
+
+
+// Main code
+separatorFunction(finalString);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
