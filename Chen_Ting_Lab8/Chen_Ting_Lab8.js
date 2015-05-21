@@ -50,7 +50,14 @@ var finalString;
 // Function
 function separatorFunction()
 {
+    var currentString;
+    var newString;
 
+    var string1 = prompt("What is your first string?", "abc");
+    var string2 = prompt("What is your second string?", "def");
+    var string3 = prompt("What is your third string?", "ghi");
+    var separatorA = prompt("What would you like your separators to be?", ",");
+    var separatorB = prompt("What would you like to replace your separators with?", "/");
 }
 
 
