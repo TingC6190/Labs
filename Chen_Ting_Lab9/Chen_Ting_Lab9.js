@@ -58,9 +58,19 @@ function diffInDate(dateOne, dateTwo, hourOrDay)
     var dayOrHour;
     var dayDiff;
     var hourDiff;
+    var firstDate  = dateOne;
+    var secondDate = dateTwo;
 
+    // ask for two dates
+    dateOne = new Date(prompt("Enter a date in this format: mm/dd/yyyy", "06/01/1990"));
+    dateTwo = new Date(prompt("Enter a second date to find the difference between the two: mm/dd/yyyy", "08/06/1990"));
 
+    var difference = dateOne - dateTwo;
 
+    // ask if they want to convert to days or hours
+    dayOrHour = prompt("Would you like to see the difference in \"Days\" or \"Hours\"", "Type 1 for Day or 2 for Hour");
+
+    return newDateDiff;
 }
 
 
