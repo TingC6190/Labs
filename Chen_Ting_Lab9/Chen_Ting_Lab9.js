@@ -7,6 +7,7 @@
 // Global Variables
 var finalNum;
 var finalString;
+var finalDate;
 
 
 // Problem 1
@@ -46,9 +47,32 @@ function stringToNum(stringArg)
     return stringArg;
 }
 
+
+
+// Problem 3
+// Function
+function diffInDate(dateOne, dateTwo, hourOrDay)
+{
+    // local variables
+    var newDateDiff;
+    var dayOrHour;
+    var dayDiff;
+    var hourDiff;
+
+
+
+}
+
+
+
+
+
 // Main code
 finalNum = formatNum(3.141592654, 5);
 console.log("Final number: " + finalNum);
 
 finalString = stringToNum();
 console.log ("This is your number string that is converted into a number: " + finalString);
+
+finalDate = diffInDate();
+console.log("Difference in dates: " + finalDate);
