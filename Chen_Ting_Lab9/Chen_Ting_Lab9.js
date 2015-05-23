@@ -80,6 +80,18 @@ function diffInDate(dateOne, dateTwo, hourOrDay)
     console.log("First Date: " + dateOne);
     console.log("Second Date: " + dateTwo);
 
+    // set to days
+    if (dayOrHour == 1)
+    {
+        newDateDiff = dayDiff;
+    }
+
+    // set to hours
+    else if (dayOrHour == 2)
+    {
+        newDateDiff = hourDiff;
+    }
+
     return newDateDiff;
 }
 
