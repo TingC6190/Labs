@@ -70,6 +70,16 @@ function diffInDate(dateOne, dateTwo, hourOrDay)
     // ask if they want to convert to days or hours
     dayOrHour = prompt("Would you like to see the difference in \"Days\" or \"Hours\"", "Type 1 for Day or 2 for Hour");
 
+    // convert difference to days
+    dayDiff = Math.abs((difference) / 1000 / 60 / 60 / 24);
+
+    // convert difference to hours
+    hourDiff = Math.abs((difference) / 1000 / 60 / 60);
+
+    // print out the two dates
+    console.log("First Date: " + dateOne);
+    console.log("Second Date: " + dateTwo);
+
     return newDateDiff;
 }
 
