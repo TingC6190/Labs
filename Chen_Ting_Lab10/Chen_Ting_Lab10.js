@@ -6,7 +6,7 @@
 
 // Global Variables
 var returnedNum;
-var pOrF = prompt("Would you like a Florida ticket or a Powerball ticket? \nType Florida or Powerball", "Florida");
+var pOrF = prompt("Would you like a Florida ticket or a Powerball ticket? \nType Florida or Powerball", "Powerball");
 
 // Function
 function quickPick(argTicket)
@@ -20,16 +20,20 @@ function quickPick(argTicket)
     {
         for (var i = 0; i < 6; i++)
         {
+            arrayTicket.push(Math.floor(Math.random() * (53 - 1) + 1));
+        }
+        return arrayTicket;
+    }
+
+    // Powerball ticket code
+    else if (pOrF == "Powerball")
+    {
+        for (var i = 0; i < 5; i++)
+        {
             arrayTicket.push(Math.floor(Math.random() * (59 - 1) + 1));
         }
         return arrayTicket;
     }
-    // Powerball ticket code
-    else if (pOrF == "Powerball")
-    {
-
-    }
-
     return arrayTicket;
 }
 
